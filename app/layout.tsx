@@ -2,8 +2,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 
-export const meta Metadata = {
-  title: 'Vibe - Historical POV Videos',
+export const metadata: Metadata = {
+  title: 'Vibe – Historical POV Videos',
   description: 'Generate cinematic first-person historical videos with AI.',
 };
 
@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-gray-900 text-white min-h-screen">
+        {children}
+      </body>
     </html>
   );
 }
